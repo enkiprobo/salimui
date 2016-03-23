@@ -1,0 +1,71 @@
+﻿<UserControl x:Name="userControl"
+    x:Class="SALIMUI.GrafikSalatMingguIni"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SALIMUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    Width="400" 
+    Height="215">
+
+    <Grid>
+        <Rectangle Fill="#FF01A5F3" HorizontalAlignment="Left" Height="153" Margin="25,37,0,0" 
+                   VerticalAlignment="Top" Width="3"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Margin="37,188,0,0" VerticalAlignment="Top" 
+                   Width="335" RenderTransformOrigin="0.5,0.5" Fill="#FF02A7F3">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariSenin, ElementName=userControl}" Margin="50,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariSelasa, ElementName=userControl}" Margin="100,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariRabu, ElementName=userControl}" Margin="145,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDihariKamis, ElementName=userControl}" Margin="194,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariJumat, ElementName=userControl}" Margin="239,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariSabtu, ElementName=userControl}" Margin="287,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <Rectangle Fill="#FF02A7F3" HorizontalAlignment="Left" Height="{Binding jumlahDiHariMinggu, ElementName=userControl}" Margin="340,0,0,35" VerticalAlignment="Bottom" 
+                   Width="12"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,39,0,0" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" Height="156" Width="10" TextAlignment="Center" FontSize="10.667" >
+        	<Run Text="5"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="4"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="3"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="2"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="1"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="0"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="38,195,0,0" TextWrapping="Wrap" Text="   Senin             Selasa            Rabu             Kamis           Jum'at             Sabtu             Minggu&#x9;" VerticalAlignment="Top" Width="335" Height="10" FontSize="8"/>
+        <TextBlock x:Name="TanggalAwal" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                   Text="{Binding tanggalAwal, ElementName=userControl}" 
+                   VerticalAlignment="Top" Margin="25,10,0,0" Width="132" Height="20" TextAlignment="Center"/>
+        <TextBlock x:Name="TanggalAkhir" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                   Text="{Binding tanggalAkhir, ElementName=userControl}" 
+                   VerticalAlignment="Top" Margin="173,10,0,0" Width="107" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="162,10,0,0" TextWrapping="Wrap" Text="-" 
+                   VerticalAlignment="Top"/>
+    </Grid>
+</UserControl>

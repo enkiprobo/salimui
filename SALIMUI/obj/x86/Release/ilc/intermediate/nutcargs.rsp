@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIMUI\SALIMUI\obj\x86\Release\ilc\intermediate\ILTransformed\SALIMUI.metadata"
+/gvmAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIMUI\SALIMUI\obj\x86\Release\ilc\intermediate\ILTransformed\SALIMUI.csv"
+/sharedGenericsMode StandardHeuristics
+/in "C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIMUI\SALIMUI\obj\x86\Release\ilc\intermediate\ILTransformed\SALIMUI.ilexe"
+/out "C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIMUI\SALIMUI\obj\x86\Release\ilc\intermediate\MDIL\SALIMUI.mdilexe"

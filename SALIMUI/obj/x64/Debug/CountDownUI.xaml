@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="SALIMUI.CountDownUI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SALIMUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="#FF48C3F4">
+        <TextBlock x:ConnectionId='1' Name="TulisanDiHeader" Text="Yuk, Salat dulu." RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Foreground="White"/>
+        <TextBlock x:ConnectionId='2' Name="WaktuTersisa" Text="10:00" RelativePanel.Below="TulisanDiHeader"
+                RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" 
+                   Foreground="White"/>
+        <Button x:ConnectionId='3' Name="ButtonBerhenti" Content="BERHENTI" RelativePanel.Below="WaktuTersisa"
+                RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" 
+                Background="#FF60CBF6" Foreground="White" Visibility="Visible"/>
+        <Button x:ConnectionId='4' Name="ButtonSelesai" Content="Klik Jika Sudah Selesai" RelativePanel.Below="WaktuTersisa"
+                RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" 
+                Background="#FF60CBF6" Foreground="White" Visibility="Collapsed"/>
+    </RelativePanel>
+</Page>
+

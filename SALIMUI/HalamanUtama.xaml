@@ -1,0 +1,300 @@
+﻿<Page
+    x:Class="SALIMUI.HalamanUtama"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SALIMUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFF4F3F3">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="JadwalSholat.(Grid.Row)" Value="0" />
+                        <Setter Target="JadwalSholat.(Grid.Column)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Row)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.Column)" Value="0" />
+                        <Setter Target="Hadist.(Grid.Row)" Value="2" />
+                        <Setter Target="Hadist.(Grid.Column)" Value="0" />
+
+                        <Setter Target="JadwalSholat.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="JadwalSholat.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="Kalendar.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="Hadist.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="Hadist.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="2" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="JadwalSholat.(Grid.Row)" Value="0" />
+                        <Setter Target="JadwalSholat.(Grid.Column)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Row)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.Column)" Value="0" />
+                        <Setter Target="Hadist.(Grid.Row)" Value="2" />
+                        <Setter Target="Hadist.(Grid.Column)" Value="0" />
+
+                        <Setter Target="JadwalSholat.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="JadwalSholat.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="Kalendar.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="Hadist.(Grid.RowSpan)" Value="1" />
+                        <Setter Target="Hadist.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="2" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="JadwalSholat.(Grid.Row)" Value="0" />
+                        <Setter Target="JadwalSholat.(Grid.Column)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Row)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Column)" Value="1" />
+                        <Setter Target="Hadist.(Grid.Row)" Value="0" />
+                        <Setter Target="Hadist.(Grid.Column)" Value="2" />
+
+                        <Setter Target="JadwalSholat.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="JadwalSholat.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="Hadist.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="Hadist.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1080" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="JadwalSholat.(Grid.Row)" Value="0" />
+                        <Setter Target="JadwalSholat.(Grid.Column)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Row)" Value="0" />
+                        <Setter Target="Kalendar.(Grid.Column)" Value="1" />
+                        <Setter Target="Hadist.(Grid.Row)" Value="0" />
+                        <Setter Target="Hadist.(Grid.Column)" Value="2" />
+
+                        <Setter Target="JadwalSholat.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="JadwalSholat.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="Kalendar.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="Hadist.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="Hadist.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="260" />
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Image Name="GambarHeader" Source="Assets/bg header langit bintang.png" 
+               Margin="10,0,10,10" Stretch="UniformToFill"/>
+        <RelativePanel Canvas.ZIndex="2"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+            <TextBlock Name="HariIni" 
+                       Text="Tanggal" 
+                       TextAlignment="Center" 
+                       Foreground="White" 
+                       RelativePanel.Above="JamHariIni"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" FontFamily="Fonts/Roboto-Medium.ttf#Roboto Medium" FontSize="13.333"/>
+            <TextBlock x:Name="JamHariIni" 
+                       Text="jamnya" 
+                       TextAlignment="Center" 
+                       Foreground="White" 
+                       RelativePanel.Above="NamaSalat"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"
+                       Margin="0,5,0,30" FontFamily="Fonts/Roboto-Black.ttf#Roboto Black" FontWeight="Bold" FontSize="14.667"
+                       />
+            <TextBlock Name="NamaSalat"
+                       Text="Salatnya" 
+                       TextAlignment="Center" 
+                       Foreground="White"
+                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="16" FontFamily="Fonts/Roboto-Black.ttf#Roboto Black" FontWeight="Bold"/>
+        </RelativePanel>
+        <RelativePanel Canvas.ZIndex="1"
+                       Grid.RowSpan="2">
+            <Image Stretch="Fill" 
+                   Width="100" 
+                   Height="100" 
+                   RelativePanel.AlignBottomWithPanel="True"
+                   RelativePanel.AlignLeftWithPanel="True" Source="Assets/bg header icon.png" Margin="10,0,0,5"/>
+
+        </RelativePanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical"></StackPanel>
+            <TextBlock Name="KataAjakan" 
+                       Text="Yuk, Salat tepat waktu!" 
+                       Margin="0,5,0,0" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Bottom" />
+        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      Grid.Row="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel Name="JadwalSholat"
+                            Grid.RowSpan="3"
+                            Margin="10">
+                    <TextBlock Name="WaktuSalatUntukHariIni" HorizontalAlignment="Center" VerticalAlignment="Center"
+                               Text="Hari Ini" Margin="3"
+                               />
+                    <!--1-->
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="IkonSubuh"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Subuh"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="IkonSubuh"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Name="WaktuSubuh"
+                                   Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <!--2-->
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="IkonZuhur"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon siang.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Dzuhur"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="IkonZuhur"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Name="WaktuDzuhur"
+                                   Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <!--3-->
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="IkonAshar"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon siang.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Ashr"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="IkonAshar"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Name="WaktuAshr"
+                                   Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <!--4-->
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="IkonMaghrib"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon siang.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Maghrib"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="IkonMaghrib"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Name="WaktuMaghrib"
+                                   Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <!--5-->
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="IkonIsya"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Isya"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="IkonIsya"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Name="WaktuIsya" 
+                                   Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+
+                </StackPanel>
+                <StackPanel Name="Kalendar"
+                            Grid.Column="1"
+                            Grid.RowSpan="3"
+                            Margin="10" Background="White">
+                    <CalendarView x:Name="KalenderPerbulan" VerticalAlignment="Top" HorizontalAlignment="Center" 
+                                  Height="290" Margin="0,0,-0.4,0" FirstDayOfWeek="Monday" AllowDrop="True" 
+                                  SelectedDatesChanged="KalenderPerbulan_SelectedDatesChanged"/>
+                </StackPanel>
+                <RelativePanel Name="Hadist" 
+                            Margin="10"
+                            Grid.Column="2"
+                            Grid.RowSpan="3" Background="White">
+                    <TextBlock Name="HadistNya" Margin="20" Text="Hadist"
+                               TextWrapping="Wrap" TextAlignment="Center"
+                               RelativePanel.AlignHorizontalCenterWithPanel="True"
+                               RelativePanel.AlignVerticalCenterWithPanel="True" FontFamily="Fonts/Roboto-Light.ttf#Roboto Light"
+                               />
+                        
+                </RelativePanel>
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+</Page>
